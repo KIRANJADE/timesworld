@@ -6,6 +6,8 @@ import CountriesCard from '../components/CountriesCard';
 import { useLocation } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 import WelcomeSection from '../components/WelcomeSection';
+import HomeImage from '../assets/images/homeImage.png';
+
 const Home = () => {
 	const location = useLocation();
 	const [visibleCount, setVisibleCount] = useState(10);
@@ -34,7 +36,7 @@ const Home = () => {
 			<div className='Banner_Section'>
 				<div className='Banner_Section_left'><CustomCarousel /></div>
 				<div className='Banner_Section_right'>
-					<img src='https://via.placeholder.com/500x400' alt='banner' className='bannerImage' />
+					<img src={HomeImage} alt='banner' className='bannerImage' />
 				</div>
 			</div>
 			<div className='CountriesCard_Container'>

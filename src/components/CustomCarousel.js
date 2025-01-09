@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import LeftIcon from '../assets/images/svg/arrow-left.svg';
 import RightIcon from '../assets/images/svg/arrow-right.svg';
+import CarouselImage from '../assets/images/carousel.png';
 
 const CustomCarousel = () => {
     const carouselRef = useRef(null);
@@ -22,32 +23,16 @@ const CustomCarousel = () => {
         <div className="custom-carousel-container">
             <Carousel id="customCarousel" ref={carouselRef}>
                 <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="https://via.placeholder.com/800x400"
-                        alt="First slide"
-                    />
+                    <img className="sliderImg d-block w-100" src={CarouselImage} alt="First slide" />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="https://via.placeholder.com/800x400"
-                        alt="Second slide"
-                    />
+                    <img className="sliderImg d-block w-100" src={CarouselImage} alt="Second slide" />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="https://via.placeholder.com/800x400"
-                        alt="Third slide"
-                    />
+                    <img className="sliderImg d-block w-100" src={CarouselImage} alt="Third slide" />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="https://via.placeholder.com/800x400"
-                        alt="Fourth slide"
-                    />
+                    <img className="sliderImg d-block w-100" src={CarouselImage} alt="Fourth slide" />
                 </Carousel.Item>
             </Carousel>
 

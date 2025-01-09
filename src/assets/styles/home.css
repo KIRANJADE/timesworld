@@ -23,7 +23,7 @@
 }
 
 .navbar {
-  background-color: transparent;
+  background-color: #fbfbfb;
   height: 80px;
 }
 .navbar .navbar-brand {
@@ -86,12 +86,18 @@
   width: 29%;
   position: relative;
 }
-
+.sliderImg{
+  height: auto;
+  max-height: 450px;
+  object-fit: cover;
+  border: 2px solid var(--color-primary);
+}
 .bannerImage {
   width: 100%;
   height: auto;
   max-height: 400px;
   object-fit: cover;
+  border: 2px solid var(--color-primary);
 }
 
 @media (max-width: 768px) {
