@@ -79,7 +79,7 @@
 }
 
 .Banner_Section_left {
-  width: 70%;
+  width: 69%;
 }
 
 .Banner_Section_right {
@@ -113,19 +113,14 @@
     width: 100%;
     order: -1;
   }
-
-  .bannerImage {
-    height: auto;
-    max-height: 450px;
-    object-fit: contain;
-  }
 }
 
 @media (min-width: 769px) {
   .bannerImage {
     height: 100%;
-    max-height: 450px;
+    max-height: 100px;
     object-fit: cover;
+    background-color: #f0f0f0;
   }
 }
 

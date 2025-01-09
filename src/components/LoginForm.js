@@ -35,7 +35,7 @@ const LoginForm = () => {
           </Form.Group>
           <Form.Group >
             <Form.Control size="lg" type="text" placeholder="Password" required pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"  />
-            <Form.Control.Feedback type="invalid">Password must be minimum 8 characters long (consist of atleast 1 Capital letter, 1 number & 1 symbol)</Form.Control.Feedback>
+            <Form.Control.Feedback type="invalid">Password must be minimum 8 characters long (atleast 1 Capital letter, 1 number & 1 symbol)</Form.Control.Feedback>
           </Form.Group>
           <Form.Check inline label="Keep me signed in" type='checkbox' />
           <Button type="submit">Sign In</Button>
