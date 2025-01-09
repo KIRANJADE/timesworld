@@ -1,0 +1,103 @@
+@import "./variable.css";
+
+.login_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  height: 100vh;
+}
+.login_illustration {
+  width: 40%;
+  height: 510px;
+  object-fit: contain;
+}
+@media only screen and (max-width: 768px) {
+  .login_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .login_illustration {
+    display: none;
+  }
+}
+/* Login Form */
+.LoginForm_Container {
+  padding: 50px;
+}
+.LoginForm_Container_Body {
+  display: flex;
+  flex-direction: column;
+}
+.LoginForm_Container_Header_Title {
+  font-size: 32px;
+  font-family: var(--font-family-common);
+  font-weight: 700;
+  line-height: 42px;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}
+.LoginForm_Container_Header_SubTitle {
+  font-size: 16px;
+  font-family: var(--font-family-common);
+  font-weight: 700;
+  line-height: 26px;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}
+.LoginForm_Container_Header_SubTitle span {
+  font-size: 16px;
+  font-family: var(--font-family-common);
+  font-weight: 600;
+  line-height: 21.79px;
+  color: var(--color-link);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+/* Seprator */
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid #000; /* Adjust color as needed */
+  margin: 0 10px;
+}
+
+.separator span {
+    font-size: 13px;
+    font-weight: 700;
+    font-family: var(--font-family-common);
+    line-height: 19px;
+}
+.LoginForm_Container_Footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+.LoginForm_Container_Footer .socialIcon{
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .LoginForm_Container {
+    padding: 20px;
+  }
+  .LoginForm_Container_Header_Title {
+    text-align: center;
+  }
+  .LoginForm_Container_Header_SubTitle {
+    text-align: center;
+  }
+}
